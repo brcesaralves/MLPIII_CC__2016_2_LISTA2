@@ -14,9 +14,15 @@ public class Circulo implements IGeometria{
 
 	@Override
 	public double calculoPerimetro() {
-		return 2*3.14*this.raio;
+		return (2*3.14)*this.raio;
 	}
-	
 
+	public double getRaio() {
+		return raio;
+	}
+
+	public void setRaio(double raio) {
+		this.raio = raio;
+	}
 
 }

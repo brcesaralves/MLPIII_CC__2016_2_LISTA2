@@ -1,9 +1,11 @@
 package br.unipe.mlpIII.formageometrica.model;
 
 public class Quadrado extends Quadrilatero implements IGeometria{
+	private double lado;
 	
 	public Quadrado(double lado) {
 		super(lado, 0, 0, 0);
+		this.lado = lado;
 	}
 
 	@Override
@@ -13,9 +15,11 @@ public class Quadrado extends Quadrilatero implements IGeometria{
 
 	@Override
 	public double calculoPerimetro() {
-		return this.getLado1() + this.getLado2() + this.getLado3() + this.getLado4();
+		return this.getLado1() * 4;
 	}
 
-	
+	public double getLado() {
+		return lado;
+	}
 	
 }
